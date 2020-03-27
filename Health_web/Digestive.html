@@ -18,6 +18,34 @@
 
 <body>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<body>
+<script>
+   
+var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+ 
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+ 
+</script>
+
+
+
 <nav class="navbar navbar-light bg-light">
   <a class="navbar-brand" href="index.html">Home</a>
    
@@ -244,72 +272,14 @@ Restrict nighttime eating to before 7 p.m. While a few slip-ups and late-night s
 
 
 
-
-
-
-
-
-<section>
-	
-
-
-
-	<div class="container">
-  <div class="row">
-    <div class="col-sm">
-
-    </div>
-</div>
-</div>
-</section>
-
-
-
-
-
-
 <footer>
-	 
-<div class="footer-top">
-	<div class="container">
+   
+<div class="footer-top" style="background-color: #2c3e50">
+  <div class="container">
   <div class="row ">
-    <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
-      
-      <div class="card" style="width: 80%;">
-  
-  
-
-  <img src="image/health25.jpg" class="card-img-top" alt="...">
- 
-
-  <div class="card-body">
-  <h5 class="card-title"> Get Health Magazine</h5>
-    <p class="card-text"> $1.00 an isuee</p>
-
-   <a href="#" class="btn btn-primary">Subscribe Now</a>
-  
-  </div>
-</div>
-
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
-     <h2>useful link</h2>
-
-<ul>
-	
-<li>
-	<a href="#">Event</a></li>
-	<li><a href="#">Support</a></li>
-	<li><a href="#">Hosting</a></li>
-	<li><a href="#">Career</a></li>
-	<li><a href="#">Blog</a></li>
-
-
-
-</ul>
-
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+    
+    
+    <div class="col  segment-three">
  <h2>Follow Us</h2>
  <p class="textcolor">please follow us on our social media profile in order to keep update.</p>
 
@@ -320,22 +290,38 @@ Restrict nighttime eating to before 7 p.m. While a few slip-ups and late-night s
     </div>
 
 
- <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
- 	<h2> more info </h2>
- 	
+ <div class="col segment-four">
+  <h2> more info </h2>
+  
 <p class="textcolor">  for your question </p>
 <form>
-	<textarea style="color: #c0392b">write your question here to get the answer from your doctor directly</textarea>
-	<input type="text" name="email"> 
-	<input type="submit" name="submit" value="send">
+  <textarea style="color: #c0392b">write your question here to get the answer from your doctor directly</textarea>
+  <input type="text" name="email"> 
+  <input type="submit" name="submit" value="send">
 </form>
 
 
  </div>
 
+
+<div class="col segment-four ">
+  <h2>sign in</h2>
+<p class="textcolor">for register to our web please sign in  </p>
+<form>
+ <label class="textcolor"> first name:</label>  <input type="text" name="text" required><br>
+ <label class="textcolor">last name:</label>     <input type="text" name="text" required><br>
+<label class="textcolor"> phone no:</label>  <input type="tet" name="number"><br>
+<label class="textcolor"> email add:</label>    <input type="text" name="email" required><br>
+<label class="textcolor">password:</label>       <input type="password" name="password" required ><br>
+
+<input type="submit" name="submit" value="sign in">
+</form>
+
+</div>
+
   </div>
 </div>
-	
+  
 </div>
 
 <p class="footer-text-bottom">All Right reserved by &copy; Health.2020  </p>

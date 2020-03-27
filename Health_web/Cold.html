@@ -16,6 +16,33 @@
 
 <body>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<body>
+<script>
+   
+var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+ 
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+ 
+</script>
+
+
 <nav class="navbar navbar-light bg-light">
   <a class="navbar-brand" href="index.html">Home</a>
    
@@ -78,7 +105,9 @@ If symptoms last for longer, it’s possible you have something more worrisome, 
  <ul>
  	
 <li>
-<b>You’ve had symptoms for longer than four days</b> 
+  <h5>
+<b>You’ve had symptoms for longer than four days</b></h5>
+<img src="image/cold3.jpg" width="40%"> 
 <p>The common cold tends to clear up on its own in three to four days, says Melisa Lai Becker, MD, site chief of emergency medicine at Cambridge Health Alliance. It starts with a scratchy throat, congestion, and runny nose, and then a cough usually develops. While your cough and post-nasal drip may linger, most head cold symptoms should disappear after four days.
 
 "With a cold, you ultimately feel OK after a couple days of rest, hydration, and Kleenex," she says.
@@ -87,31 +116,39 @@ If symptoms last for longer, it’s possible you have something more worrisome, 
 </li>
 
 <li>
-	<b>  You recently returned from a big trip</b>
+  <h5> 
+	<b>  You recently returned from a big trip</b></h5>
+  <img src="image/cold4.jpg" width="40%"> 
 	<p>Recent international travel is a red flag for doctors because it could mean you have a less-conventional infection they wouldn’t have normally considered, explains Stella Safo, MD, an internist at Mount Sinai Hospital who specializes in infectious diseases. It’s important to see a doctor if you have any symptoms after returning from a trip abroad.
 
 </p>
 </li>
 
 <li>
-<b> You have a high fever</b>
-<p>The question of "Can you have a fever with a cold?" is a tricky one. While it's definitely possible to be feverish when you have a cold, it's not common—especially high fevers.
+  <h5> 
+<b> You have a high fever</b></h5>
+  <img src="image/cold5.jpg" width="40%">
+<p>The question of "Can you have a fever with a cold?" is a tricky one. While it's definitely possible to be feverish when you have a cold, it's not common especially high fevers.
 
 If you have a fever at or above 101 degrees Fahrenheit, it could be a sign of strep throat, says Dr. Lai Becker. Most patients with strep will develop a high fever in the first few days of illness, so be wary of sudden spikes in your temperature. "Strep throat is one thing you really want to distinguish from a cold," she says. "Left untreated, it can cause rheumatic fever and lead to serious heart problems."</p>
 	
 </li>
 
 <li>
-	<b>   You’ve had a low-grade fever for days</b>
-<p>Even if your fever isn’t particularly high, running a low-grade fever for several days in a row could be a sign your body is trying to fight off more than a cold, says Dr. Lai Becker. A consistent fever could mean you actually have the flu or mono—so be diligent about checking it, even if it doesn’t feel super intense.
+  <h5> 
+	<b>   You’ve had a low-grade fever for days</b></h5>
+    <img src="image/cold6.jpg" width="40%">
+<p>Even if your fever isn’t particularly high, running a low-grade fever for several days in a row could be a sign your body is trying to fight off more than a cold, says Dr. Lai Becker. A consistent fever could mean you actually have the flu or mono so be diligent about checking it, even if it doesn’t feel super intense.
 
 </p>
 	
 </li>
 
 <li>
-	<b>You’re having stomach issues</b>
-<p>Having nausea with a cold—as well as vomiting and diarrhea—isn't typical, so symptoms like these could signal something more serious, such as the flu. It’s important to get medical attention if you’re experiencing these symptoms consistently, as they can cause you to become dehydrated, says Dr. Mysore.</p>
+  <h5>
+	<b>You’re having stomach issues</b></h5>
+   <img src="image/cold7.jpg" width="40%">
+<p>Having nausea with a cold as well as vomiting and diarrhea isn't typical, so symptoms like these could signal something more serious, such as the flu. It’s important to get medical attention if you’re experiencing these symptoms consistently, as they can cause you to become dehydrated, says Dr. Mysore.</p>
 	
 </li>
 
@@ -294,48 +331,15 @@ It’s also important to drink plenty of water to replace the fluid you’re los
 
 
 
+
 <footer>
-	 
-<div class="footer-top">
-	<div class="container">
+   
+<div class="footer-top" style="background-color: #2c3e50">
+  <div class="container">
   <div class="row ">
-    <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
-      
-      <div class="card" style="width: 80%;">
-  
-  
-
-  <img src="image/health25.jpg" class="card-img-top" alt="...">
- 
-
-  <div class="card-body">
-  <h5 class="card-title"> Get Health Magazine</h5>
-    <p class="card-text"> $1.00 an isuee</p>
-
-   <a href="#" class="btn btn-primary">Subscribe Now</a>
-  
-  </div>
-</div>
-
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
-     <h2>useful link</h2>
-
-<ul>
-	
-<li>
-	<a href="#">Event</a></li>
-	<li><a href="#">Support</a></li>
-	<li><a href="#">Hosting</a></li>
-	<li><a href="#">Career</a></li>
-	<li><a href="#">Blog</a></li>
-
-
-
-</ul>
-
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+    
+    
+    <div class="col  segment-three">
  <h2>Follow Us</h2>
  <p class="textcolor">please follow us on our social media profile in order to keep update.</p>
 
@@ -346,30 +350,44 @@ It’s also important to drink plenty of water to replace the fluid you’re los
     </div>
 
 
- <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
- 	<h2> more info </h2>
- 	
+ <div class="col segment-four">
+  <h2> more info </h2>
+  
 <p class="textcolor">  for your question </p>
 <form>
-	<textarea style="color: #c0392b">write your question here to get the answer from your doctor directly</textarea>
-	<input type="text" name="email"> 
-	<input type="submit" name="submit" value="send">
+  <textarea style="color: #c0392b">write your question here to get the answer from your doctor directly</textarea>
+  <input type="text" name="email"> 
+  <input type="submit" name="submit" value="send">
 </form>
 
 
  </div>
 
+
+<div class="col segment-four ">
+  <h2>sign in</h2>
+<p class="textcolor">for register to our web please sign in  </p>
+<form>
+ <label class="textcolor"> first name:</label>  <input type="text" name="text" required><br>
+ <label class="textcolor">last name:</label>     <input type="text" name="text" required><br>
+<label class="textcolor"> phone no:</label>  <input type="tet" name="number"><br>
+<label class="textcolor"> email add:</label>    <input type="text" name="email" required><br>
+<label class="textcolor">password:</label>       <input type="password" name="password" required ><br>
+
+<input type="submit" name="submit" value="sign in">
+</form>
+
+</div>
+
   </div>
 </div>
-	
+  
 </div>
 
 <p class="footer-text-bottom">All Right reserved by &copy; Health.2020  </p>
 
 
 </footer>
-
-
 
 
 

@@ -18,6 +18,31 @@
 
 <body>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<body>
+<script>
+   
+var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+ 
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+ 
+</script>
 
 
 
@@ -69,7 +94,7 @@ The terms "skin condition" and "skin disorder" are used interchangeably to descr
     <div class="col-sm">
     <h2> 	11 Surprising Causes of Acne Breakouts</h2>
     <p>Could these everyday habits be causing your pimple problem?</p>
-<img src="image/skin1.jpg" width="50%">
+<img src="image/skin1.jpg" width="80%">
 
 
 
@@ -80,8 +105,10 @@ Acne treatments, including over-the-counter products, prescribed topical and ora
 It turns out that there are quite a few things that could be contributing to your surprise acne breakouts:</p>
 
 
+<h4> 
+<b>Your travel itinerary</b></h4>
+<img src="image/skin2.jpg" width="40%">
 
-<b>Your travel itinerary</b>
 <p>
 Have you ever boarded a flight with a clear face and then, within a day after arriving at your destination, some annoying pimple popped up? Unfortunately, a change of environment can trigger acne. The humidity in aircraft cabins is usually less than 20%, while the humidity in the home is typically over 30%, according to the World Health Organization. Low humidity may cause a person’s skin to produce more oil (which carries bacteria) in an effort to rehydrate.
 
@@ -89,21 +116,25 @@ And that's not the only problem. “Often when you travel, you’re not getting 
 
 
 
-
-<b>Your toothpaste</b>
+<h4> 
+<b>Your toothpaste</b></h4>
+<img src="image/skin3.jpg" width="40%">
 <p> 
 Getting breakouts around your mouth? Your toothpaste may be the culprit. “Fluoridated toothpaste can cause an acne-like rash around the mouth called perioral dermatitis,” Joshua Zeichner, MD, a New York City-based dermatologist, tells Health.</p>
 
 
+<h4>  <b>Your filthy pillowcase </b>  </h4>
 
-<b>Your filthy pillowcase </b>
+<img src="image/skin4.jpg" width="40%">
 <p>
 Given that your face spends multiple hours a day cheek to cheek with your pillow, it’s only a matter of time before you begin lying on accumulated dust, dead skin cells, oil, dirt, and bacteria. “When you sleep you sweat, so there is an increase of sweat and bacteria on the pillowcase,” says Jaliman. The next night when you sleep, this build-up of dirt and oil will transfer from the pillow to your skin, which, in turn, clogs pores and cause blemishes. 
 
 By the way, not removing your makeup before bedtime hinders skin renewal and clogs pores. “Foundation makeup forms a seal over the surface of the skin,” says Dr. Zeichner. As a result, all that grime quickly blocks up your pores</p>
 
-
+<h4>
 <b>Your post-exercise routine</b>
+</h4>
+<img src="image/skin5.jpg" width="40%">
 <p>
 When you work out, you sweat a lot. Although sweat itself does not cause breakouts, sweat can “trap dirt and oil on the skin and make you break out if you don’t wash it off,” states Dr. Zeichner. That's why it's so important to cleanse your skin after exercising.</p>
 
@@ -171,48 +202,15 @@ Do you switch between four or five different acne-fighting spot creams, astringe
 
 
 
+
 <footer>
-	 
-<div class="footer-top">
-	<div class="container">
+   
+<div class="footer-top" style="background-color: #2c3e50">
+  <div class="container">
   <div class="row ">
-    <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
-      
-      <div class="card" style="width: 80%;">
-  
-  
-
-  <img src="image/health25.jpg" class="card-img-top" alt="...">
- 
-
-  <div class="card-body">
-  <h5 class="card-title"> Get Health Magazine</h5>
-    <p class="card-text"> $1.00 an isuee</p>
-
-   <a href="#" class="btn btn-primary">Subscribe Now</a>
-  
-  </div>
-</div>
-
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
-     <h2>useful link</h2>
-
-<ul>
-	
-<li>
-	<a href="#">Event</a></li>
-	<li><a href="#">Support</a></li>
-	<li><a href="#">Hosting</a></li>
-	<li><a href="#">Career</a></li>
-	<li><a href="#">Blog</a></li>
-
-
-
-</ul>
-
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+    
+    
+    <div class="col  segment-three">
  <h2>Follow Us</h2>
  <p class="textcolor">please follow us on our social media profile in order to keep update.</p>
 
@@ -223,28 +221,45 @@ Do you switch between four or five different acne-fighting spot creams, astringe
     </div>
 
 
- <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
- 	<h2> more info </h2>
- 	
+ <div class="col segment-four">
+  <h2> more info </h2>
+  
 <p class="textcolor">  for your question </p>
 <form>
-	<textarea style="color: #c0392b">write your question here to get the answer from your doctor directly</textarea>
-	<input type="text" name="email"> 
-	<input type="submit" name="submit" value="send">
+  <textarea style="color: #c0392b">write your question here to get the answer from your doctor directly</textarea>
+  <input type="text" name="email"> 
+  <input type="submit" name="submit" value="send">
 </form>
 
 
  </div>
 
+
+<div class="col segment-four ">
+  <h2>sign in</h2>
+<p class="textcolor">for register to our web please sign in  </p>
+<form>
+ <label class="textcolor"> first name:</label>  <input type="text" name="text" required><br>
+ <label class="textcolor">last name:</label>     <input type="text" name="text" required><br>
+<label class="textcolor"> phone no:</label>  <input type="tet" name="number"><br>
+<label class="textcolor"> email add:</label>    <input type="text" name="email" required><br>
+<label class="textcolor">password:</label>       <input type="password" name="password" required ><br>
+
+<input type="submit" name="submit" value="sign in">
+</form>
+
+</div>
+
   </div>
 </div>
-	
+  
 </div>
 
 <p class="footer-text-bottom">All Right reserved by &copy; Health.2020  </p>
 
 
 </footer>
+
 
 
 

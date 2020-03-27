@@ -10,6 +10,7 @@
     <link rel="stylesheet"  href="static/CSS/Bootstrap.min.CSS">
     <link rel="stylesheet"  href="static/css/font-awesome.min.css">
      <link rel="stylesheet"   href="static/css/style1.CSS">
+     
 
 
 
@@ -18,8 +19,31 @@
 
 	<title>Health </title>
 </head>
-<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+<body>
+<script>
+   
+var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+ 
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+ 
+</script>
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light  " >
@@ -114,13 +138,17 @@
 
     <div class=" " >
 <h3>Health conditions</h3>
-<ul class="  mylist" style=" ">
-  
-  <a href="Anxiety.html" class="list-group-item list-group-item-action"style="background-color: #1abc9c;">Anxiety</a>
-  <a href="Cold.html" class="list-group-item list-group-item-action" style="background-color: #f1c40f">Cold Flu and Sinus</a> 
-  <a href="Skin.html" class="list-group-item list-group-item-action"style="background-color: #1abc9c;">Skin Conditions</a>
-  <a href="Digestive.html" class="list-group-item list-group-item-action"style="background-color: #f1c40f">Digestive Health</a>
-  <a href="eyehealth.html" class="list-group-item list-group-item-action"style="background-color: #1abc9c;">Eye Health</a>
+<ul class="mylist"  >
+  <li>
+  <a href="Anxiety.html">Anxiety</a></li>
+  <li>
+  <a href="Cold.html"    >Cold Flu and Sinus</a> </li>
+  <li>
+  <a href="Skin.html"  >Skin Conditions</a></li>
+  <li>
+  <a href="Digestive.html"  >Digestive Health</a></li>
+  <li>
+  <a href="eyehealth.html"  >Eye Health</a></li>
    
 </ul>
 </div>
@@ -226,6 +254,8 @@ If CO poisoning is suspected, consult a health care professional right away.</li
     <div class="col-sm">
      <h2>  Have You or a Family Member Had Colon Cancer?</h2>
  <img src="image/dise2.jpg" width="40%">
+ <br>
+ <br>
  <p>Having a family health history of colorectal (colon) cancer can make you more likely to get colorectal cancer yourself. If you have close family members with colorectal cancer, collect your family health history of colorectal and other cancers, and share this information with your doctor. Be sure to have any screening tests that your doctor recommends. If you have had colorectal cancer, make sure that your family members know about your diagnosis, especially if you have Lynch syndrome.</p>
 
 
@@ -309,12 +339,24 @@ The genetic counselor may recommend genetic testing based on your family health 
 
 <h3>Symptoms</h3>
 
+
+<div class="container">
+<div class="row">
+  <div class="col">
 <div class="card">
   <div class="card-body" style="background-color: #f39c12;">
-    
+    <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
 Call your doctor:  If you think you have been exposed to COVID-19 and develop a fever and symptoms, such as cough or difficulty breathing, call your healthcare provider for medical advice.
   </div>
 </div>
+
+</div>
+
+</div>
+
+</div>
+
+
 
 <h3> Watch for symptoms</h3>
 <p>
@@ -529,7 +571,7 @@ During a COVID-19 outbreak in your community, stay home as much as possible to f
 
 
 
-
+<div class="container">
 <div class="row">
 	<div class="col-md-12">
 		<div class="card border-0">
@@ -773,7 +815,7 @@ Know about emergency operations plans for schools/workplaces of household member
 
 
 </div>
-
+</div>
  
 <hr>
 </section>
@@ -864,6 +906,7 @@ However, because of increased leisure time, changes in lifestyles rendered this 
 </ol>
 
 <h3> Health related fitness components:</h3>
+<img src="image/fitness3.jpg" width="40%">
 <ol type="1">
 These are -
 <li>Body composition</li>
@@ -878,6 +921,7 @@ These are -
  
 </ol>
 <b> Health Related Physical Fitness –</b>
+
 <p>
 What is Physical Fitness or what is Health Related Physical fitness? - It is best defined as activity aimed to improve your health. The goal of health related fitness is prevention of or rehabilitation from disease as well as the development of a high level of functional capacity for daily tasks.</p>
 
@@ -935,6 +979,8 @@ Weight training exercises - push ups, pull ups, biceps curls, pectoral fly, leg 
 
 
 <p><b> Skill related components of physical fitness:</b></p>
+<img src="image/fitness4.jpg" width="40%">
+
 
 <ol type="1">
 
@@ -1860,7 +1906,10 @@ Although research interest on physical activity and health dates back to the 195
 <p>
 The Report from the United Nations Inter-Agency Task Force on Sport for Development and Peace states that young people can benefit from physical activity as it contributes to developing healthy bones, efficient heart and lung function as well as improved motor skills and cognitive function. Physical activity can help to prevent hip fractures among women and reduce the effects of osteoporosis. Remaining physically active can enhance functional capacity among older people, and can help to maintain quality of life and independence.</p>
 
-<b>Physical activity and psychosocial health</b>
+
+<h4>
+<b>Physical activity and psychosocial health</b></h4>
+<img src="image/sport5.jpg" width="40%">
 <p>
 
 The WHO has estimated that “one in four patients visiting a health service has at least one mental, neurological or behavioural disorder, but most of these disorders are neither diagnosed nor treated”. A number of studies have shown that exercise may play a therapeutic role in addressing a number of psychological disorders. Studies also show that exercise has a positive influence on depression. Physical self-worth and physical self-perception, including body image, has been linked to improved self-esteem. The evidence relating to health benefits of physical activity predominantly focuses on intra-personal factors such as physiological, cognitive and affective benefits, however, that does not exclude the social and inter-personal benefits of sport and physical activity which can also produce positive health effects in individuals and communities.</p>
@@ -1875,6 +1924,8 @@ Sport and physical activity can make a substantial contribution to the well-bein
 
 
 <h2>Sport, physical activity and risk factors for major diseases</h2>
+
+<img src="image/sport6.jpg" width="40%">
 <p>
 An understanding of the most prevalent diseases and associated risk factors is crucial to conceptualise the role of sport in health prevention and promotion. In developing countries, sport is widely used as a tool to educate individuals and communities on the risk factors associated with HIV/AIDS. Whilst HIV/AIDS and other communicable diseases continue to affect millions of people around the world, there is a significant increase in the global burden of non-communicable diseases related to lifestyle changes in physical inactivity, unhealthy diets and tobacco use.
 </p>
@@ -1930,13 +1981,7 @@ HIV/AIDS is usually considered a taboo subject and the creation of safe and info
 <p>
 The role of sports coaches as role models and mentors has proved a vital component of HIV/AIDS prevention programmes using sport. These coaches can also be peers to other young people of a similar age, with whom buildingrelationships of trust can be easier. The programmes that have proven to be most successful in HIV/AIDS prevention have been those that emphasisedeveloping strong leaders and coaches who offer support and guidance.
 </p>
-<p>
-
-59% of HIV positive individuals in sub-Saharan Africa are women. A number of actors have attempted to address the impact of this gender bias in HIV/AIDS affected groups through sport. For example, the Go Sisters project in Zambia seeks to provide sports opportunities to girls and young women and to provide factual information pertaining to sexual and reproductive health. The health elements of the Go Sisters ‘message’ goes hand-in-hand with the promotion of young women as peer leaders and coaches for other girls and young women.
-</p>
-<p>
-The use of sport in addressing HIV/AIDS does not only focus on the epidemiological aspects but the social impact of the disease on individuals and communities as well. The EduSport Foundation was created from the ‘bottom-up’ by individuals directly affected by HIV/AIDS, who not only prioritise providing young people in affected communities with life-saving information on preventative and protective measures but also actively promote the social integration of HIV positive individuals into the community through sport and physical activity.
-</p>
+ 
 <b>
 Sport and other communicable diseases
 </b>
@@ -1961,46 +2006,12 @@ A number of sports programmes target other communicable diseases in addition to 
 
 <footer>
 	 
-<div class="footer-top">
+<div class="footer-top" style="background-color: #2c3e50">
 	<div class="container">
   <div class="row ">
-    <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
-      
-      <div class="card" style="width: 80%;">
-  
-  
-
-  <img src="image/health25.jpg" class="card-img-top" alt="...">
- 
-
-  <div class="card-body">
-  <h5 class="card-title"> Get Health Magazine</h5>
-    <p class="card-text"> $1.00 an isuee</p>
-
-   <a href="#" class="btn btn-primary">Subscribe Now</a>
-  
-  </div>
-</div>
-
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
-     <h2>useful link</h2>
-
-<ul>
-	
-<li>
-	<a href="#">Event</a></li>
-	<li><a href="#">Support</a></li>
-	<li><a href="#">Hosting</a></li>
-	<li><a href="#">Career</a></li>
-	<li><a href="#">Blog</a></li>
-
-
-
-</ul>
-
-    </div>
-    <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+    
+    
+    <div class="col  segment-three">
  <h2>Follow Us</h2>
  <p class="textcolor">please follow us on our social media profile in order to keep update.</p>
 
@@ -2011,7 +2022,7 @@ A number of sports programmes target other communicable diseases in addition to 
     </div>
 
 
- <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
+ <div class="col segment-four">
  	<h2> more info </h2>
  	
 <p class="textcolor">  for your question </p>
@@ -2024,6 +2035,22 @@ A number of sports programmes target other communicable diseases in addition to 
 
  </div>
 
+
+<div class="col segment-four ">
+  <h2>sign in</h2>
+<p class="textcolor">for register to our web please sign in  </p>
+<form>
+ <label class="textcolor"> first name:</label>  <input type="text" name="text" required><br>
+ <label class="textcolor">last name:</label>     <input type="text" name="text" required><br>
+<label class="textcolor"> phone no:</label>  <input type="tet" name="number"><br>
+<label class="textcolor"> email add:</label>    <input type="text" name="email" required><br>
+<label class="textcolor">password:</label>       <input type="password" name="password" required ><br>
+
+<input type="submit" name="submit" value="sign in">
+</form>
+
+</div>
+
   </div>
 </div>
 	
@@ -2033,35 +2060,6 @@ A number of sports programmes target other communicable diseases in addition to 
 
 
 </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
